@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Mechanic App</title>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">AutoMob-Mechanic</a></h1>
+    <div>
+      <nav>
+        <a href="index.html">Home</a>  |
+        <a href="services.html">Services</a>  |
+        <a href="booking.html">Booking</a>  |
+        <a href="">Contact@automob.co.in <sub><img src="\mail-icon.png" width="20Px"alt="mail icon image"></sub></a>  |
+        <a href="">999 999 9999 <sub><img src="\telephone-icon.jpeg" width="24px"> </sub></a>
+
+      </nav>
+    </div>
+  </header>
+  <hr>
+  <main>
+    <h1>Schedule Your Appointment</h1>
+    <form action="booking-success.html" method="post">
+
+      <label for="date">Appointment date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="address">Address:</label>
+      <textarea name="address" required id="address" cols="50" rows="10"></textarea><br><br>
+
+      <label for="city">City:</label>
+      <input type="text"id="city" name="city" placeholder="Mumbai,Pune..."><br><br>
+
+      <label for="state">State:</label>
+      <input list="states"id="state" name="state" placeholder="Kerala,Maharashtra..." required>
+      <datalist id="states">
+        <option value="Aasam">
+        <option value="Bihar">
+        <option value="Gujarat">
+        <option value="Goa">       
+      </datalist>
+      
+      
+      
+      <br><br>
+
+      <label for="notification">Send notification:</label>
+      <input type="checkbox"id="email"name="email">
+      <label for="email">Email</label>
+      <input type="checkbox" id="sms" name="sms">
+      <label for="sms">SMS:</label>
+
+    </form>
+    <br><br>
+    <p>
+     <button>
+      <a href="booking-success.html">Book</a>
+     </button>
+    </p>
+  </main>
+  <hr>
+  <footer>
+Copyright &copy;2020 AutoMob-Mechanic.All rights reserved.
+  </footer>
+</body>
+</html>
